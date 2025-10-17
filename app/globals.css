@@ -4,7 +4,7 @@
 @keyframes leaf-drift {
   0%   { transform: translate3d(0, 0, 0); opacity: 0; }
   8%   { opacity: 1; }
-  100% { transform: translate3d(-110vw, 100vh, 0); opacity: 0; }
+  100% { transform: translate3d(-110vw, 80vh, 0); opacity: 0; }
 }
 
 /* --- Gentle side-to-side wobble + spin --- */
@@ -22,7 +22,7 @@
 @layer utilities {
   .leaf-parent {
     position: absolute;
-    right: -8vw; /* start slightly off screen */
+    right: 15vw; /* start slightly off screen */
     top: var(--start-top, 5vh);
     width: var(--size, 28px);
     height: auto;

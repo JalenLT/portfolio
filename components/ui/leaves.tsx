@@ -18,7 +18,7 @@ function makeConfig(id: number): LeafConfig {
         size: Math.round(rand(18, 42)),  // random pixel size
         duration: rand(8, 15),           // how long it floats
         delay: rand(0, 8),               // when it starts
-        startTop: rand(-5, 22),          // starting height on screen
+        startTop: rand(-10, 30),          // starting height on screen
         sway: rand(2.6, 3.8),            // flutter speed
     };
 }
@@ -45,7 +45,7 @@ export default function Leaves({count}: {count: number}){
                     <Image
                         src="/leaf.png"
                         alt=""
-                        className="leaf-child" 
+                        className="z-10 leaf-child drop-shadow-lg drop-shadow-black"
                         width={64}
                         height={64}
                     />
