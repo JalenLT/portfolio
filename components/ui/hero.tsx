@@ -29,7 +29,6 @@ export default function Hero() {
             </Card>
         </div>
 
-        {/* Tree (decorative) */}
         <Image
             src="/tree_design.png"
             alt=""
@@ -46,7 +45,7 @@ export default function Hero() {
                 -z-1
             "
         />
-        <Leaves />
+        <Leaves count={12} />
         </section>
     </div>
   );

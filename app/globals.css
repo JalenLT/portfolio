@@ -1,10 +1,52 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@keyframes leaf-drift {
+  0%   { transform: translate3d(0, 0, 0); opacity: 0; }
+  8%   { opacity: 1; }
+  100% { transform: translate3d(-110vw, 100vh, 0); opacity: 0; }
+}
+
+/* --- Gentle side-to-side wobble + spin --- */
+@keyframes leaf-sway {
+  0%   { transform: translateX(0) rotate(0deg); }
+  25%  { transform: translateX(0.6vw) rotate(12deg); }
+  50%  { transform: translateX(0) rotate(0deg); }
+  75%  { transform: translateX(-0.6vw) rotate(-12deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
 @custom-variant dark (&:is(.dark *));
 @custom-variant hover (&:hover);
 
 @layer utilities {
+  .leaf-parent {
+    position: absolute;
+    right: -8vw; /* start slightly off screen */
+    top: var(--start-top, 5vh);
+    width: var(--size, 28px);
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    animation: leaf-drift var(--duration, 10s) linear var(--delay, 0s) infinite;
+    will-change: transform, opacity;
+  }
+
+  /* The image inside the shell gets the wobble. */
+  .leaf-child {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: leaf-sway var(--sway, 3.2s) ease-in-out 0s infinite;
+    transform-origin: 50% 50%;
+  }
+
+  /* Respect users who prefer reduced motion. */
+  @media (prefers-reduced-motion: reduce) {
+    .leaf { animation: none !important; opacity: 1; }
+    .leaf-child { animation: none !important; }
+  }
+  
   .dotted-background {
       /* background-color: rgba(255, 255, 255, 0.5); */
       background-color: #fcf5e8;
