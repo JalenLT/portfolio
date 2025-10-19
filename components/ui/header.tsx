@@ -6,11 +6,11 @@ import CustomButton from "./custom_button"
 
 export default function Header(){
     return <>
-        <header className="flex justify-between items-center m-4">
+        <header className="flex justify-between items-center m-4 z-10">
             <Logo />
             <div className="flex gap-3">
                 <CustomButton icon={Home} text="Home" path="/" />
-                <CustomButton icon={FolderKanban} text="Projects" path="/" />
+                <CustomButton icon={FolderKanban} text="Projects" path="/projects" />
                 <CustomButton icon={PenSquare} text="Blog" path="/" />
                 <CustomButton icon={Info} text="About" path="/" />
             </div>

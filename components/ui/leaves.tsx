@@ -1,36 +1,11 @@
-import Image from "next/image";
-import { useMemo } from "react";
+import falling_leaves from "@/data/falling_leaves.json";
+import { LeafConfig } from "@/types/leaf";
+import Leaf from "./leaf";
 
-const rand = (min: number, max: number) => Math.random() * (max - min) + min;
-
-type LeafConfig = {
-    id: number;
-    size: number;
-    duration: number;
-    delay: number;
-    startTop: number;
-    sway: number;
-};
-
-function makeConfig(id: number): LeafConfig {
-    return {
-        id,
-        size: Math.round(rand(18, 42)),  // random pixel size
-        duration: rand(8, 15),           // how long it floats
-        delay: rand(0, 8),               // when it starts
-        startTop: rand(-10, 30),          // starting height on screen
-        sway: rand(2.6, 3.8),            // flutter speed
-    };
-}
-
-export default function Leaves({count}: {count: number}){
-    const configs = useMemo(() => {
-        return Array.from({ length: count }, (_, i) => makeConfig(i));
-    }, [count]);
-
+export default function Leaves({startRight = 15}: {startRight: number}){
     return (
         <>
-            {configs.map((leaf) => (
+            {falling_leaves.map((leaf: LeafConfig) => (
                 <span
                     key={leaf.id}
                     className="leaf-parent"
@@ -38,17 +13,12 @@ export default function Leaves({count}: {count: number}){
                         ["--size" as string]: leaf.size + "px",
                         ["--duration" as string]: leaf.duration + "s",
                         ["--delay" as string]: leaf.delay + "s",
+                        ["--start-right" as string]: startRight + "vw",
                         ["--start-top" as string]: leaf.startTop + "vh",
                         ["--sway" as string]: leaf.sway + "s",
                     }}
                 >
-                    <Image
-                        src="/leaf.png"
-                        alt=""
-                        className="z-10 leaf-child drop-shadow-lg drop-shadow-black"
-                        width={64}
-                        height={64}
-                    />
+                    <Leaf />
                 </span>
             ))}
         </>
