@@ -3,7 +3,7 @@ export default function FloorItem({data, children}: {data: {bottom?: number, rig
         <div 
             className="absolute"
             style={{
-                ...(data.bottom !== undefined && {bottom: `${data.bottom * 1}vw`}),
+                ...(data.bottom !== undefined && {bottom: `${data.bottom * 1.2}vw`}),
                 ...(data.right !== undefined && {right: `${data.right}vw`}),
                 ...(data.size !== undefined && {width: `${data.size}px`}),
                 ...(data.rotation !== undefined && {

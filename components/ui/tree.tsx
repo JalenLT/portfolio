@@ -14,8 +14,10 @@ export default function Tree(){
                 drop-shadow-lg drop-shadow-black/60
                 pointer-events-none select-none
                 object-contain
-                
             "
+            style={{
+                zIndex: -10
+            }}
         />
     );
 }

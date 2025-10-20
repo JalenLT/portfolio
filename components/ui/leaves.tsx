@@ -8,7 +8,7 @@ export default function Leaves({startRight = 15}: {startRight: number}){
             {falling_leaves.map((leaf: LeafConfig) => (
                 <span
                     key={leaf.id}
-                    className="leaf-parent"
+                    className="leaf-parent z-10"
                     style={{
                         ["--size" as string]: leaf.size + "px",
                         ["--duration" as string]: leaf.duration + "s",
