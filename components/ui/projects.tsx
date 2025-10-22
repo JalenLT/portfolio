@@ -10,6 +10,7 @@ import Image from "next/image";
 import ProjectCard from "./project_card";
 import { ProjectCardData } from "@/data/project_card_data";
 import { Jost } from "next/font/google";
+import { getReadme } from "@/lib/utils/getReadme";
 
 const jost = Jost({
     variable: "--font-jost",
@@ -37,7 +38,7 @@ export default function Projects() {
                             Projects
                         </h1>
                         <p className="text-[#a89989] text-lg font-semibold text-shadow-md mb-4">
-                            A collection of works I've built
+                            A collection of works I&apos;ve built
                         </p>
                     </MouseParallaxChild>
                 </div>
