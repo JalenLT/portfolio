@@ -1,5 +1,6 @@
 'use client';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import Image from "next/image";
 
 export default function ProjectsScreen({projectCards, title, description, floorLeaves, floorGrass, leaves, fenceFront, fenceBack}: {
     projectCards: React.ReactNode, 
@@ -49,6 +50,9 @@ export default function ProjectsScreen({projectCards, title, description, floorL
                     </MouseParallaxChild>
                     <MouseParallaxChild factorX={0.3} factorY={0.3} className="absolute left-[-8vw] top-[46vh] h-full w-full">
                         { fenceBack }
+                    </MouseParallaxChild>
+                    <MouseParallaxChild factorX={0.3} factorY={0.3} className="absolute left-[20vw] top-[38vh] h-full w-full drop-shadow-lg drop-shadow-black/60">
+                        <Image src={`/images/src/creature_running_left.png`} alt="Creature Running Left" width={300} height={300} className={``} />
                     </MouseParallaxChild>
                 </div>
             </MouseParallaxContainer>

@@ -66,10 +66,10 @@ export default function Projects() {
                 </MouseParallaxChild>
 
                 <MouseParallaxChild factorX={0.2} factorY={0.2} className="absolute left-[-2vw] top-[40vh] h-full w-full opacity-[70%]">
-                    <Image src={`/fence_side.png`} alt="Fence" width={350} height={350} className={``} />
+                    <Image src={`/images/src/fence_side.png`} alt="Fence" width={350} height={350} className={``} />
                 </MouseParallaxChild>
                 <MouseParallaxChild factorX={0.3} factorY={0.3} className="absolute left-[-8vw] top-[46vh] h-full w-full">
-                    <Image src={`/fence_side.png`} alt="Fence" width={400} height={400} className={``} />
+                    <Image src={`/images/src/fence_side.png`} alt="Fence" width={400} height={400} className={``} />
                 </MouseParallaxChild>
             </div>
         </MouseParallaxContainer>

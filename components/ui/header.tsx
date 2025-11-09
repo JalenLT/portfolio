@@ -9,7 +9,7 @@ export default function Header(){
             <LinkDrawer 
                 icon={(
                     <Image 
-                        src="/Stefan Seunarine Logo Light.png" 
+                        src="/images/logo/Stefan Seunarine Logo Light.png" 
                         alt="Stefan Seunarine's Logo"
                         width={60}
                         height={60}
@@ -23,7 +23,6 @@ export default function Header(){
                 <CustomButton icon={Home} text="Home" path="/" />
                 <CustomButton icon={FolderKanban} text="Projects" path="/projects" />
                 <CustomButton icon={PenSquare} text="Blog" path="/" />
-                <CustomButton icon={Info} text="About" path="/" />
             </div>
         </header>
     </>

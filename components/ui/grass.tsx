@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Grass({size, hue = 0}: {size: number, hue?: number}){
     return (<Image 
-        src="/grass_3.png" 
+        src="/images/src/grass_3.png" 
         alt={"Grass"} 
         width={size} 
         height={size} 

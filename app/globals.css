@@ -27,6 +27,16 @@
   100% { opacity: 0; }
 }
 
+@keyframes slide-up {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes slide-out {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
 @custom-variant dark (&:is(.dark *));
 @custom-variant hover (&:hover);
 
@@ -77,6 +87,14 @@
   .faded-overflow {
     mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  }
+
+  .slide-up {
+    animation: slide-up var(--duration, 1s) ease-in-out var(--delay, 0s) forwards;
+  }
+
+  .slide-out {
+    animation: slide-out var(--duration, 1s) ease-in-out var(--delay, 0s) forwards;
   }
 }
 

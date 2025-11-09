@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Tree(){
     return (
         <Image
-            src="/tree_design.png"
+            src="/images/src/tree_design.png"
             alt=""
             aria-hidden="true"
             priority

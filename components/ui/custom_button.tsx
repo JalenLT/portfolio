@@ -7,7 +7,7 @@ export default function CustomButton({icon: Icon, text, path = "", onClick = () 
         return (
             <Button 
                 variant="outline" 
-                className="rounded-full border-2 border-[#a89989] text-[#a89989] hover:text-[#746352] hover:border-[#746352] hover:bg-[#fff9f3] transition shadow-md hover:shadow-xl"
+                className="cursor-pointer rounded-full border-2 border-[#a89989] text-[#a89989] hover:text-[#746352] hover:border-[#746352] hover:bg-[#fff9f3] transition shadow-md hover:shadow-xl"
                 asChild
             >
                 <Link href={path}>
@@ -19,7 +19,7 @@ export default function CustomButton({icon: Icon, text, path = "", onClick = () 
         return (<Button 
             onClick={onClick}
             variant="outline" 
-            className="rounded-full border-2 border-[#a89989] text-[#a89989] hover:text-[#746352] hover:border-[#746352] hover:bg-[#fff9f3] transition shadow-md hover:shadow-xl"
+            className="cursor-pointer rounded-full border-2 border-[#a89989] text-[#a89989] hover:text-[#746352] hover:border-[#746352] hover:bg-[#fff9f3] transition shadow-md hover:shadow-xl"
         >
             <Icon /> {text}
         </Button>);

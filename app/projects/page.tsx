@@ -18,12 +18,12 @@ export default function Projects() {
             <ProjectsScreen
                 projectCards={<ProjectCards />}
                 title={<h1 className={`text-[#746352] text-4xl md:text-5xl font-semibold tracking-tight text-shadow-md flex-grow ${jost.className}`}>Projects</h1>}
-                description={<p className="text-[#a89989] text-lg font-semibold text-shadow-md mb-4">A collection of works I&apos;ve built</p>}
+                description={<h2 className="text-[#a89989] text-lg font-semibold text-shadow-md mb-4">A collection of works I&apos;ve built</h2>}
                 floorLeaves={<FloorLeaves direction="right" />}
                 floorGrass={<FloorGrass direction="right" />}
                 leaves={<Leaves startRight={15} />}
-                fenceFront={<Image src={`/fence_side.png`} alt="Fence" width={350} height={350} className={``} />}
-                fenceBack={<Image src={`/fence_side.png`} alt="Fence" width={400} height={400} className={``} />}
+                fenceFront={<Image src={`/images/src/fence_side.png`} alt="Fence" width={350} height={350} className={``} />}
+                fenceBack={<Image src={`/images/src/fence_side.png`} alt="Fence" width={400} height={400} className={``} />}
             />
         </div>
     </>;
