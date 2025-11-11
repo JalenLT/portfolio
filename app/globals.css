@@ -43,7 +43,7 @@
 @layer utilities {
   .leaf-parent {
     position: absolute;
-    right: var(--start-right, 15vw); /* start slightly off screen */
+    right: var(--start-right, 15vw);
     top: var(--start-top, 5vh);
     width: var(--size, 28px);
     height: auto;
