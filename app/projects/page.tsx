@@ -11,6 +11,11 @@ const jost = Jost({
     subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Projects | Stefan Seunarine",
+  description: "A collection of projects showcasing Stefan Seunarine's skills as a full-stack developer.",
+};
+
 export default function Projects() {
     return <>
         <div className="relative overflow-x-clip">
