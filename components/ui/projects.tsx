@@ -26,7 +26,7 @@ export default function Projects() {
                 > 
                     <MouseParallaxChild factorX={0.3} factorY={0.3} className="grid grid-cols-1 gap-3">
                         {ProjectCardData.map((card, index) => {
-                            return <ProjectCard key={"project-card-" + index} name={card.name} description={card.description} tags={card.tags} icon={card.icon} />;
+                            return <ProjectCard key={"project-card-" + index} name={card.name} description={card.description} tags={card.tags} icon={card.icon} href={card.href} />;
                         })}
                     </MouseParallaxChild>
                 </div>
@@ -53,9 +53,6 @@ export default function Projects() {
                                     </FloorItem>
                                 })}
                                 {grass_floor_rtl.map((pile, index) => {
-                                    if (pile.rotation !== undefined) {
-                                        delete pile.rotation;
-                                    }
                                     return <FloorItem key={"grass-floor-" + index} data={pile}>
                                         <Grass size={pile.size * 1.2} />
                                     </FloorItem>
