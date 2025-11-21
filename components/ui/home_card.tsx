@@ -1,9 +1,6 @@
 import CustomCard from "./custom_card";
 import { Jost } from "next/font/google";
-import { ChevronDown, Home } from "lucide-react";
-import CustomButton from "./custom_button";
-import { Separator } from "./separator";
-import { Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const jost = Jost({
     variable: "--font-jost",
@@ -36,7 +33,7 @@ export default function HomeCard(){
                             transition shadow-md hover:shadow-xl
                         "
                     >
-                        <Phone className="w-4 h-4 font-bold" />
+                        <Mail className="w-4 h-4 font-bold" />
                         <span>Contact</span>
                     </a>  
                 </div>
