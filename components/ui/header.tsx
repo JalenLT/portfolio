@@ -9,7 +9,7 @@ export default function Header(){
             <LinkDrawer 
                 icon={(
                     <Image 
-                        src="/images/logo/Stefan Seunarine Logo Light.png" 
+                        src="/images/logo/lone_tree_logo_light.png" 
                         alt="Stefan Seunarine's Logo"
                         width={60}
                         height={60}
