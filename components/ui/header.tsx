@@ -6,20 +6,37 @@ import LinkDrawer from "./link_drawer"
 export default function Header(){
     return <>
         <header className="flex justify-between items-center m-4 z-[20]">
-            <LinkDrawer 
-                icon={(
-                    <Image 
-                        src="/images/logo/lone_tree_logo_light.png" 
-                        alt="Stefan Seunarine's Logo"
-                        width={60}
-                        height={60}
-                        className="shrink-0"
-                    />
-                )} 
-                text="Stefan Seunarine"
-                path="/"
-            />
-            <div className="flex gap-3">
+            <div className="hidden md:block">
+                <LinkDrawer 
+                    icon={(
+                        <Image 
+                            src="/images/logo/lone_tree_logo_light.png" 
+                            alt="Stefan Seunarine's Logo"
+                            width={60}
+                            height={60}
+                            className="shrink-0"
+                        />
+                    )} 
+                    text="Stefan Seunarine"
+                    path="/"
+                />
+            </div>
+            <div className="block md:hidden">
+                <LinkDrawer 
+                    icon={(
+                        <Image 
+                            src="/images/logo/lone_tree_logo_light.png" 
+                            alt="Stefan Seunarine's Logo"
+                            width={60}
+                            height={60}
+                            className="shrink-0"
+                        />
+                    )} 
+                    text=""
+                    path="/"
+                />
+            </div>
+            <div className="flex gap-1 md:gap-3">
                 <CustomButton icon={Home} text="Home" path="/" />
                 <CustomButton icon={FolderKanban} text="Projects" path="/projects" />
                 <CustomButton icon={PenSquare} text="Blog" path="/blogs" />

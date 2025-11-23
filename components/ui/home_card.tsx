@@ -13,17 +13,17 @@ const jost = Jost({
 export default function HomeCard(){
     return (
         <CustomCard>
-            <h1 className={`text-[#746352] text-6xl md:text-7xl font-semibold tracking-tight text-shadow-md mb-3 ${jost.className}`}>
+            <h1 className={`text-[#746352] text-4xl md:text-7xl font-semibold tracking-tight text-shadow-md mb-1 md:mb-3 ${jost.className}`}>
                 Stefan Seunarine
             </h1>
-            <p className="text-[#a89989] text-3xl md:text-5xl font-semibold text-shadow-sm mb-4">
+            <p className="text-[#a89989] text-2xl md:text-5xl font-semibold text-shadow-sm mb-4">
                 Full-stack Developer
             </p>
-            <div className="flex justify-between gap-3">
-                <blockquote className="text-[#746352] text-lg">
+            <div className="block md:flex md:justify-between gap-3">
+                <blockquote className="text-[#746352]">
                     I am a full-stack developer based in Trinidad and Tobago. I specialize in building efficient, scalable web applications and crafting intuitive user  experiences for complex systems.
                 </blockquote>
-                <div>
+                <div className="flex justify-end md:block">
                     <a
                         href="mailto:seunarine.stefan.lt@gmail.com"
                         className="

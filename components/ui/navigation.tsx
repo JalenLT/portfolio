@@ -5,7 +5,7 @@ export default function Navigation({left, right}: {left?: {text: string, path: s
     return (
         <>
             {left && (
-                <div className="absolute left-6 top-1/2 -translate-y-1/2 z-[100]">
+                <div className="absolute left-3 md:left-6 bottom-0 md:top-1/2 md:-translate-y-1/2 z-[100]">
                     <LinkDrawer 
                         icon={(
                             <ChevronLeft />
@@ -16,7 +16,7 @@ export default function Navigation({left, right}: {left?: {text: string, path: s
                 </div>
             )}
             {right && (
-                <div className="absolute right-6 top-1/2 -translate-y-1/2 z-[100]">
+                <div className="absolute right-3 md:right-6 bottom-0 md:top-1/2 md:-translate-y-1/2 z-[100]">
                 <LinkDrawer 
                     icon={(
                         <ChevronRight />
