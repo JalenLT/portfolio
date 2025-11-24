@@ -20,7 +20,7 @@ export default function ProjectCard({name, description, tags, icon, href}: {name
                 <p className="text-[#a89989] text-lg font-semibold text-shadow-sm mb-4">
                     {description}
                 </p>
-                <div className="flex">
+                <div className="flex flex-wrap gap-y-2">
                     {tags.map((tag, index) => (
                         <Badge key={"tag-" + name + "-" + index} className="border-[#a89989] text-[#a89989] bg-light font-bold mx-1">{tag}</Badge>
                     ))}

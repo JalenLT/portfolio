@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function Projects() {
     return <>
-        <div className="relative overflow-x-clip">
+        <div className="relative max-h-screen overflow-x-clip">
             <Navigation left={{text: "Blogs", path: "/blogs"}} right={{text: "Home", path: "/"}} />
             <ProjectsScreen
                 projectCards={<ProjectCards />}
