@@ -13,6 +13,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${post.title} | Stefan Seunarine`,
     description: post.description || "",
+    alternates: {
+      canonical: `https://stefanseunarine.dev/blog/${params.slug}`,
+    },
+    keywords: post.tags?.join(", ") || "",
+    author: "Stefan Seunarine",
     openGraph: {
       title: post.title,
       description: post.description,
@@ -44,6 +49,6 @@ export default function BlogPostPage({ params }: PageProps) {
   const post = getPostBySlug(params.slug);
 
   return (
-        <Blog post={post} />    
+        <Blog post={post} url={`https://stefanseunarine.dev/blog/${params.slug}`} />    
   );
 }
