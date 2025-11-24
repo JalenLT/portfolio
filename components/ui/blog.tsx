@@ -46,19 +46,39 @@ export default function Blog({post}: {post: PostMeta}){
 										{
 											h1: ({ node, ...props }) => (
 											<h1
-												className="text-3xl md:text-4xl font-semibold text-[#746352] leading-tight mb-4"
+												className="text-3xl md:text-4xl font-semibold text-[#746352] leading-tight mb-4 text-wrap"
 												{...props}
 											/>
 											),
 											h2: ({ node, ...props }) => (
 											<h2
-												className="text-2xl md:text-3xl font-semibold text-[#a89989] mt-6 mb-2"
+												className="text-2xl md:text-3xl font-semibold text-[#a89989] mt-6 mb-2 text-wrap"
 												{...props}
 											/>
 											),
 											p: ({ node, ...props }) => (
 											<p
-												className="text-base leading-relaxed text-[#746352] mb-3"
+												className="text-base leading-relaxed text-[#746352] mb-3 text-wrap"
+												{...props}
+											/>
+											),
+											code: ({ node, className, ...props }) => {
+											const isInline = !className;
+											return isInline ? (
+												<code
+												className="text-wrap bg-neutral-200 dark:bg-neutral-800 px-1 py-0.5 rounded"
+												{...props}
+												/>
+											) : (
+												<code
+												className="text-wrap whitespace-pre-wrap"
+												{...props}
+												/>
+											);
+											},
+											pre: ({ node, ...props }) => (
+											<pre
+												className="text-wrap whitespace-pre-wrap bg-neutral-100 dark:bg-neutral-900 p-4 rounded-md"
 												{...props}
 											/>
 											),
