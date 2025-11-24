@@ -11,7 +11,12 @@ export default function HomeScreen({homeCard, tree, floorLeaves, floorGrass, lea
     const [mainCard, setMainCard] = useState("about");
     return (
         <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} containerStyle={{"overflow": "visible"}}>
-            <section className={`overflow-visible h-[85vh] max-h-[85vh] relative`}>
+            <MouseParallaxChild factorX={0.2} factorY={0.2}
+                className="absolute right-0 bottom-0 md:bottom-[-2vw] w-[75vw] md:w-[clamp(500px,38vw,680px)] z-[-1000] fade-in"
+            >
+                { tree }
+            </MouseParallaxChild>
+            <section className={` h-[85vh] max-h-[85vh] overflow-hidden faded-overflow relative`}>
                 <div 
                     className={`container mx-auto md:px-6 md:py-24 md:absolute
                     lg:pr-[36vw] xl:pr-[40vw] fade-in z-100 md:left-[5vw] md:top-0 ${mainCard === "about" ? "" : "hidden"}`}
@@ -151,11 +156,7 @@ export default function HomeScreen({homeCard, tree, floorLeaves, floorGrass, lea
                         </div>
                     </MouseParallaxChild>
                 </div>
-                <MouseParallaxChild factorX={0.2} factorY={0.2}
-                    className="absolute right-0 bottom-0 md:bottom-[-2vw] w-[75vw] md:w-[clamp(500px,38vw,680px)] z-[-1000] fade-in"
-                >
-                    { tree }
-                </MouseParallaxChild>
+                
                 <div className={`absolute h-full w-full right-[15vw] top-[30vh] scale-75 md:scale-100 md:right-0 md:top-0 z-[-1000]`}>
                     { leaves }
                 </div>

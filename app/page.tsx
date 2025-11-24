@@ -36,7 +36,7 @@ export const metadata = {
 
 export default function Home() {
   return <>
-      <div className="relative max-h-screen overflow-y-hidden overflow-x-clip faded-overflow">
+      <div className="relative max-h-screen overflow-x-clip">
           <Navigation left={{text: "Projects", path: "/projects"}} />
           <HomeScreen 
             homeCard={<HomeCard />}
