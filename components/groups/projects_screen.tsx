@@ -15,7 +15,7 @@ export default function ProjectsScreen({projectCards, title, description, floorL
     return (
         <>
             <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-                <div className="pointer-events-none relative h-[90vh] max-h-[90vh] w-100 overflow-hidden">
+                <div className="pointer-events-none relative h-[90vh] max-h-[90vh] overflow-hidden">
                     <div className={`absolute h-full w-full top-0 right-[-55vw]`}>
                         { leaves }
                     </div>
