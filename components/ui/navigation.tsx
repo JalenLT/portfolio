@@ -8,7 +8,7 @@ export default function Navigation({ left, right }: { left?: { text: string, pat
                 <div className="
                     fixed left-3 bottom-3
                     md:absolute md:left-6 md:top-1/2 md:-translate-y-1/2
-                    z-[100]
+                    z-100 flex items-center
                 ">
                     <LinkDrawer 
                         icon={<ChevronLeft />} 
@@ -22,7 +22,7 @@ export default function Navigation({ left, right }: { left?: { text: string, pat
                 <div className="
                     fixed right-3 bottom-3
                     md:absolute md:right-6 md:top-1/2 md:-translate-y-1/2
-                    z-[100]
+                    z-100 flex items-center
                 ">
                     <LinkDrawer 
                         icon={<ChevronRight />} 
