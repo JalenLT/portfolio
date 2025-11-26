@@ -1,13 +1,13 @@
 ---
-title: "How Subtle UI Details Make Your Design Stand Out — Practical Techniques for Modern Interfaces"
+title: "How Subtle UI Details Make Your Design Stand Out. Practical Techniques for Modern Interfaces"
 description: "Learn how small, intentional UI details—parallax, texture, micro-animations, and environmental motion—can transform a standard interface into a memorable, distinctive user experience."
 author: "Stefan Seunarine"
-tags: ["UI Design", "Frontend Design", "Microinteractions", "Web Aesthetics", "Design Principles", "Portfolio UI"]
+tags: ["UI Design", "Frontend Design", "Microinteractions", "Web Aesthetics", "Design Principles", "Portfolio UI", "How to make my design stand out?"]
 date: 2025-11-11
-canonical: "https://stefanseunarine.dev/blog/improving-ui-aesthetics-with-subtle-detail"
+canonical: "https://stefanseunarine.dev/blog/how-subtle-ui-details-make-your-design-stand-out"
 ---
 
-# **Improving UI Aesthetics with Subtle Detail**
+# **How Subtle UI Details Make Your Design Stand Out. Practical Techniques for Modern Interfaces**
 
 ## **Introduction**
 
