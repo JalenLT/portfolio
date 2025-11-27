@@ -170,13 +170,10 @@ All rights reserved.
 ## Contact
 
 ### Email
-
 stefanseunarine@gmail.com
 
 ### LinkedIn
-
 https://linkedin.com/in/stefanseunarine
 
 ### GitHub
-
 https://github.com/JalenLT
