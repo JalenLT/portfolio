@@ -93,7 +93,7 @@ It is a space in which I'll showcase my professional experience, interesting pro
 ### Installation
 ```bash
 git clone https://github.com/JalenLT/portfolio
-cd stefan-portfolio
+cd portfolio
 npm install
 ```
 
