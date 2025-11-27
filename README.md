@@ -1,6 +1,6 @@
 # Stefan Seunarine - Personal Portfolio
 
-> ![Portfolio home page showing subtle UI details like dotted textures and parallax layers](/portfolio.webp)
+> ![Portfolio home page showing subtle UI details like dotted textures and parallax layers](/public/portfolio.webp)
 
 ## Introduction
 This project is an intuitive, geometric, nature-inspired portfolio that utilizes parallax and organic motion to communicate my skill and experience as a developer.
@@ -35,6 +35,7 @@ It is a space in which I'll showcase my professional experience, interesting pro
 
 ### Deployment
 - Cloudflare Pages
+- Github Actions
 
 ## Project Structure
 ```bash
