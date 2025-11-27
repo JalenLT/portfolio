@@ -1,10 +1,11 @@
 # Stefan Seunarine - Personal Portfolio
 
-> ![Portfolio home page showing subtle UI details like dotted textures and parallax layers](/public/portfolio.webp)
-
 ## Introduction
 This project is an intuitive, geometric, nature-inspired portfolio that utilizes parallax and organic motion to communicate my skill and experience as a developer.
 It is a space in which I'll showcase my professional experience, interesting projects I'm either working on or have completed, and where I'll publish technical articles about topics I'm interested in.
+
+## Screenshots
+> ![Portfolio home page showing subtle UI details like dotted textures and parallax layers](/public/portfolio.webp)
 
 ## Live Demo
 **Portfolio:** [https://stefanseunarine.dev](https://stefanseunarine.dev)
