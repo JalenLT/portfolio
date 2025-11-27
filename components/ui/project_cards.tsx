@@ -1,10 +1,10 @@
-import { ProjectCardData } from "@/data/project_card_data";
+import project_card_data from "@/data/project_card_data.json";
 import ProjectCard from "./project_card";
 
 export default function ProjectCards(){
     return (<>
-        {ProjectCardData.map((card, index) => {
-            return <ProjectCard key={"project-card-" + index} name={card.name} description={card.description} tags={card.tags} icon={card.icon} href={card.href} />;
+        {project_card_data.map((card, index) => {
+            return <ProjectCard key={"project-card-" + index} name={card.name} description={card.description} tags={card.tags} href={card.href} />;
         })}
     </>);
 }

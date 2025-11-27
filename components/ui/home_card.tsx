@@ -1,6 +1,7 @@
 import CustomCard from "./custom_card";
 import { Jost } from "next/font/google";
 import { Mail } from "lucide-react";
+import user_data from "@/data/user_data.json";
 
 const jost = Jost({
     variable: "--font-jost",
@@ -11,18 +12,18 @@ export default function HomeCard(){
     return (
         <CustomCard>
             <h1 className={`text-[#746352] text-4xl md:text-7xl font-semibold tracking-tight text-shadow-md mb-1 md:mb-3 ${jost.className}`}>
-                Stefan Seunarine
+                {user_data.name ?? "John Doe"}
             </h1>
             <p className="text-[#a89989] text-2xl md:text-5xl font-semibold text-shadow-sm mb-4">
-                Full-stack Developer
+                {user_data.title ?? "Developer"}
             </p>
             <div className="block md:flex md:justify-between gap-3">
                 <blockquote className="text-[#746352]">
-                    I am a full-stack developer based in Trinidad and Tobago. I specialize in building efficient, scalable web applications and crafting intuitive user  experiences for complex systems.
+                    {user_data.about ?? "I am a developer specializing in building efficient, scalable web applications and crafting intuitive user experiences for complex systems."}
                 </blockquote>
                 <div className="flex justify-end md:block">
                     <a
-                        href="mailto:seunarine.stefan.lt@gmail.com"
+                        href={`mailto:${user_data.email ?? ""}`}
                         className="
                             mt-6 inline-flex items-center gap-2
                             rounded-full border-2 bg-[#a89989]

@@ -1,4 +1,3 @@
-import HomeCard from "@/components/ui/home_card";
 import Tree from "@/components/ui/tree";
 import Leaves from "@/components/ui/leaves";
 import FloorLeaves from "@/components/groups/floor_leaves";
@@ -39,7 +38,6 @@ export default function Home() {
       <div className="relative max-h-screen overflow-x-clip">
           <Navigation left={{text: "Projects", path: "/projects"}} />
           <HomeScreen 
-            homeCard={<HomeCard />}
             tree={<Tree />}
             floorLeaves={<FloorLeaves direction="left" />}
             floorGrass={<FloorGrass direction="left" />}

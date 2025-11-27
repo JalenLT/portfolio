@@ -52,7 +52,7 @@ export default function ProjectsScreen({projectCards, title, description, floorL
                         { fenceBack }
                     </MouseParallaxChild>
                     <MouseParallaxChild factorX={0.3} factorY={0.3} className="absolute left-[33vw] md:left-[20vw] top-[43vh] md:top-[38vh] scale-50 md:scale-100 h-full w-full drop-shadow-lg drop-shadow-black/60">
-                        <Image src={`/images/src/creature_running_left.png`} alt="Creature Running Left" width={300} height={300} className={``} />
+                        <Image src={`/images/src/creature_running_left.png`} alt="Creature Running Left" width={300} height={300} />
                     </MouseParallaxChild>
                 </div>
             </MouseParallaxContainer>

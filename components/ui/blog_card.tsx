@@ -19,11 +19,11 @@ export default function BlogCard({title, description, date, time, image, href, i
                         {!imageTop && image && (<div className="max-h-[100px] overflow-hidden">
                             {image}
                         </div>)}
-                        <h1 className={`text-[#746352] text-3xl md:text-4xl font-semibold tracking-tight text-shadow-md mb-3 flex-grow ${jost.className}`}>
+                        <h1 className={`text-[#746352] text-3xl md:text-4xl font-semibold tracking-tight text-shadow-md text-justify mx-3 md:mx-0 md:text-left mb-3 flex-grow ${jost.className}`}>
                             {title}
                         </h1>
                     </div>
-                    <p className="text-[#a89989] text-lg font-semibold text-shadow-sm mb-4">
+                    <p className="text-[#a89989] text-lg font-semibold text-shadow-sm text-justify mx-3 md:mx-0 md:text-left mb-4">
                         {description}
                     </p>
                     <div className="flex justify-between">

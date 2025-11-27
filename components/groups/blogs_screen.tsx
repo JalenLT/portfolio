@@ -2,7 +2,7 @@
 import Navigation from "@/components/ui/navigation";
 import BlogCard from "@/components/ui/blog_card";
 import Image from "next/image";
-import blogs from "@/data/blogs.json";
+import blogs from "@/data/blog_card_data.json";
 import { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import { Jost } from "next/font/google";
@@ -51,7 +51,7 @@ export default function BlogsScreen(){
                         </MouseParallaxChild>
                     </div>
                     <div className="relative max-w-100 md:absolute md:right-0 md:top-0 md:max-w-[60vw] max-h-[50vh] h-[50vh] md:max-h-[80vh] md:h-[80vh] overflow-y-scroll faded-overflow mx-auto mr-2 mt-3 md:mt-0">
-                        <MouseParallaxChild factorX={0.3} factorY={0.3} className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <MouseParallaxChild factorX={0.3} factorY={0.3} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="grid auto-rows-max gap-4">
                                 {filteredBlogs.slice(0, amountPerColumn).map((blog, index) => {
                                     return <BlogCard 

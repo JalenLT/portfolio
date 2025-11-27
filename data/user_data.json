@@ -1,0 +1,36 @@
+{
+    "name": "Stefan Seunarine",
+    "title": "Full-Stack Developer",
+    "about": "I am a full-stack developer based in Trinidad and Tobago. I specialize in building efficient, scalable web applications and crafting intuitive user  experiences for complex systems.",
+    "email": "seunarine.stefan.lt@gmail.com",
+    "education": [
+        {
+            "institute": "University of Bedfordshire",
+            "degree": "Bachelor of Science - BS, Information Technology",
+            "duration": "January 2023 - September 2023",
+            "image": "/images/logo/uob_logo.png"
+        },
+        {
+            "institute": "University of Trinidad and Tobago",
+            "degree": "Diploma - Software Engineering",
+            "duration": "2018 - 2020",
+            "image": "/images/logo/utt_logo.png"
+        }
+    ],
+    "experience":[
+        {
+            "title": "Information Technology Analyst / Programmer",
+            "company": "Office of the Attorney General",
+            "duration_dates": "January 2023 - Present",
+            "duration_time": "2 Years",
+            "image": "/images/logo/ag_logo.png"
+        },
+        {
+            "title": "Junior Programmer",
+            "company": "Office of the Attorney General",
+            "duration_dates": "July 2021 - November 2022",
+            "duration_time": "1 Year 5 Months",
+            "image": "/images/logo/ag_logo.png"
+        }
+    ]
+}
