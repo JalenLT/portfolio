@@ -18,11 +18,16 @@ In this article, I’ll show how small aesthetic decisions, like parallax depth,
 
 ---
 
-## **Choosing a Primary UI Concept and Supporting Micro-Details**
+## **Choosing a Primary UI Concept and Its Supporting Details**
 
 So how do you actually do that?
 
-Start with restraint. **Subtlety is your greatest weapon.**  
+You start small, you think to yourself, "What am I buiding? What am I trying to portray?"
+From that you can start digging at what themes and characteristics can be used to paint that picture.
+
+With this picture in mind you can now start deciding which theme will be your main focus and which will be supplementary.
+
+You must keep in mind to move with restraint. **Subtlety is your greatest weapon.**  
 Like cooking, too much of any one ingredient spoils the dish.
 
 A useful rule of thumb:  
@@ -37,7 +42,7 @@ Now, let me bring it closer to home, my own portfolio website.
 
 ## **Real Example: Subtle UI Details in My Portfolio Website**
 
-If you visit my site, you’ll notice something right away: it feels **different**.  
+If you visit my site, you'll immeditely notice the picture that I'm trying to paint. You'll feel that it's different. You pick up warm nature, free flowing motif that I painted.
 Not necessarily better than others, but distinct, and, more importantly, *memorable*.
 
 My main design choice is a **parallax effect**: as you move your mouse, components subtly react, shifting at varying speeds to simulate depth. The motion feels organic, giving the page quiet life without distracting from its content.
@@ -151,7 +156,7 @@ It’s storytelling.
 
 ---
 
-*Note: While this was written completely by me it was formatted and corrected utilizing AI*
+*Note: While this was written completely by me, it was formatted and corrected utilizing AI*
 
 ---
 

@@ -77,6 +77,12 @@ export default function Blog({post, url}: {post: PostMeta, url: string}) {
 												{...props}
 											/>
 											),
+											h3: ({ node, ...props }) => (
+											<h3
+												className="text-xl md:text-2xl font-semibold text-[#a89989] mt-6 mb-2 text-wrap"
+												{...props}
+											/>
+											),
 											p: ({ node, ...props }) => (
 											<p
 												className="text-base leading-relaxed text-[#746352] mb-3 text-wrap"
