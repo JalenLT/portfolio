@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Stefan Seunarine | Portfolio",
     images: [
       {
-        url: "https://stefanseunarine.dev/og/home.png",
+        url: "https://stefanseunarine.dev/images/logo/lone_tree_logo_light.png",
         width: 1200,
         height: 630,
         alt: "Stefan Seunarine | Portfolio",
@@ -29,7 +29,7 @@ export const metadata = {
     title: "Stefan Seunarine | Full-Stack Developer",
     description:
       "Portfolio of Stefan Seunarine, a full-stack developer specializing in Laravel, React, and modern web applications.",
-    images: ["https://stefanseunarine.dev/og/home.png"],
+    images: ["https://stefanseunarine.dev/images/logo/lone_tree_logo_light.png"],
   },
 };
 

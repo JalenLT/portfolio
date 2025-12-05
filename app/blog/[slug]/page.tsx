@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       type: "article",
       images: [
         {
-          url: `https://stefanseunarine.dev/og/${params.slug}.png`,
+          url: `https://stefanseunarine.dev/images/logo/lone_tree_logo_light.png`,
           width: 1200,
           height: 630,
         },
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [`https://stefanseunarine.dev/og/${params.slug}.png`],
+      images: [`https://stefanseunarine.dev/images/logo/lone_tree_logo_light.png`],
     },
   };
 }
