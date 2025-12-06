@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/ui/header";
-
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://stefanseunarine.dev"),
@@ -19,6 +19,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NT055VBNQN"
+          strategy="afterInteractive"
+        />
+
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NT055VBNQN');
+          `}
+        </Script>
+      </head>
       <body
         className={`antialiased dotted-background`}
       >
